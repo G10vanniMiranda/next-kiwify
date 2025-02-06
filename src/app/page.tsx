@@ -11,6 +11,7 @@ export default function Home() {
           <div className="flex gap-1">
 
             <h1>Ou</h1>
+            <a href="http://">  </a>
             <p className="text-blue-700 font-semibold cursor-pointer">fazer cadastro</p>
 
           </div>
