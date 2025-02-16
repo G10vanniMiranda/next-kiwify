@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -11,8 +12,9 @@ export default function Home() {
           <div className="flex gap-1">
 
             <h1>Ou</h1>
-            <a href="http://">  </a>
-            <p className="text-blue-700 font-semibold cursor-pointer">fazer cadastro</p>
+            <Link href="/cadastro">
+              <p className="text-blue-700 font-semibold cursor-pointer">fazer cadastro</p>
+            </Link>
 
           </div>
         </div>
@@ -25,7 +27,9 @@ export default function Home() {
 
             <label htmlFor="password" className="text-sm font-semibold">Senha</label>
             <input type="password" name="password" className="w-80 border-2 rounded-md" />
-            <p className="text-right text-blue-700 font-semibold cursor-pointer">Esqueceu sua senha?</p>
+            <Link href="/redefinir">
+              <p className="text-right text-blue-700 font-semibold cursor-pointer">Esqueceu sua senha?</p>
+            </Link>
           </form>
 
           <button className="bg-blue-700 w-80 h-8 text-white text-sm rounded-md font-semibold cursor-pointer">Entrar</button>

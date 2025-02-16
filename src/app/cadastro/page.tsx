@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Cadastro() {
     return (
-        <div className="bg-slate-300 h-screen flex items-center justify-center">
+        <div className="bg-slate-100 h-screen flex items-center justify-center">
             <div className="h-full flex flex-col items-center justify-center gap-4">
                 <img src="./image/logo2.svg" alt="Logo Kiwify" className="w-40" />
 
@@ -12,8 +12,9 @@ export default function Cadastro() {
                     <div className="flex gap-1">
 
                         <h1>Ou</h1>
-                        <a href="http://">  </a>
-                        <p className="text-blue-700 font-semibold cursor-pointer">entrar na sua conta existente</p>
+                        <Link href="/">
+                            <p className="text-blue-700 font-semibold cursor-pointer">entrar na sua conta existente</p>
+                        </Link>
 
                     </div>
                 </div>
@@ -47,16 +48,16 @@ export default function Cadastro() {
                             </select>
                         </div>
 
-                        <div className="flex items-center justify-center">
-                            <input className="rela" type="checkbox" />
-                            <label className="text-xs mb-3 font-semibold"> Eu li e aceito os 
-                                <Link href="https://kiwify.com.br/termos-de-uso/" className="border-b-2 pr-2 pl-2">termos de uso</Link>, 
-                                <Link href="https://kiwify.com.br/licenca-de-uso-software/" className="border-b-2 pr-2 pl-2">termos de licença de uso de software</Link>, 
+                        <div className="flex gap-2 items-start justify-center">
+                            <input className="" type="checkbox" />
+                            <label className="text-xs mb-3 font-semibold"> Eu li e aceito os
+                                <Link href="https://kiwify.com.br/termos-de-uso/" className="border-b-2 pl-2">termos de uso</Link>,
+                                <Link href="https://kiwify.com.br/licenca-de-uso-software/" className="border-b-2 pr-2 pl-2">termos de licença de uso de software</Link>,
                                 <Link href="https://kiwify.com.br/politica-de-conteudo/" className="border-b-2 pr-2 pl-2">política de conteúdo</Link> da Kiwify
-                           </label>
+                            </label>
                         </div>
 
-                        <Link href="/">
+                        <Link href="/" >
                             <button className="bg-blue-700 w-full h-8 text-white text-sm rounded-md font-semibold cursor-pointer">
                                 Criar conta
                             </button>
